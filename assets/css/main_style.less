@@ -1,0 +1,68 @@
+/* -----------------------------------
+** MIXINS & VARIABLE
+** ----------------------------------- */
+@color-primary : #0576ac;
+@color-secondary: #009bd6;
+
+.round(@size) {
+	-webkit-border-radius: @size;
+	-moz-border-radius: @size;
+	-ms-border-radius: @size;
+	-o-border-radius: @size;
+	border-radius: @size;
+}
+
+.placeholder(@rules) {
+
+    &::-webkit-input-placeholder {
+        @rules();
+    }
+    &:-moz-placeholder {
+        @rules();
+    }
+    &::-moz-placeholder {
+        @rules();
+    }
+    &:-ms-input-placeholder {
+        @rules();
+    }
+}
+
+
+
+/* -----------------------------------
+** GENERAL
+** ----------------------------------- */
+body {
+	color: #656565;
+}
+
+
+
+/* -----------------------------------
+** HEADER
+** ----------------------------------- */
+.header {
+	background: @color-primary;
+}
+
+
+
+/* -----------------------------------
+** CONTENT
+** ----------------------------------- */
+.main-content {
+	padding: 30px 0px;
+
+	p {
+		margin-bottom: 20px;
+	}
+}
+
+
+/* -----------------------------------
+** FOOTER
+** ----------------------------------- */
+.footer {
+	background: @color-secondary;
+}
