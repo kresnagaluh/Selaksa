@@ -7,7 +7,7 @@
 		<!-- FOOTER -->
 		<footer class="footer">
 			<div class="container">
-				Footer
+				Created by <a href="http://www.kresnagaluh.com">Kresna Galuh D. Herlangga</a>
 			</div>
 		</footer>
 		<!-- END: FOOTER -->

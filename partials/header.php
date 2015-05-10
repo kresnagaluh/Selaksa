@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>Sooqy</title>
+	<title>Selaksa Framework</title>
 	<meta name="author" content="http://webthemez.com" />
 	<meta name="description" content="" />
 	<meta name="robots" content="index,follow" />
@@ -31,10 +31,7 @@
 	<!-- STYLESHEET -->
 	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/vendor/awesome/css/font-awesome.min.css" rel="stylesheet" />
-	<link href="assets/vendor/selaksa/selaksa.css" rel="stylesheet" />
-	<link href="assets/css/font.css" rel="stylesheet" />
-	<link href="assets/css/main_style.css" rel="stylesheet" />
-	<link href="assets/css/responsive_style.css" rel="stylesheet" />
+	<link href="assets/css/mainstyle.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -44,9 +41,11 @@
 
 
 		<!-- HEADER -->
-		<header>
+		<header class="header">
 			<div class="container">
-				Header
+				<div class="page-header">
+					<h2>Selaksa Framework</h2>
+				</div>
 			</div>
 		</header>
 		<!-- END: HEADER -->
