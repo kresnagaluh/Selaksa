@@ -29,8 +29,8 @@
 	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
 	<!-- STYLESHEET -->
-	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="assets/vendor/awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="assets/css/mainstyle.css" rel="stylesheet" />
 
 </head>

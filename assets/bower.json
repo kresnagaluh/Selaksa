@@ -1,0 +1,12 @@
+{
+  "name": "selaksa",
+  "description": "aplikasi ngetes doang",
+  "version": "1.0",
+  "authors": "Kresna Galuh D. Herlangga",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "bootstrap": "~3.3.4",
+    "fontawesome": "https://github.com/FortAwesome/Font-Awesome.git#~4.3.0"
+  },
+  "private": true
+}

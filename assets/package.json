@@ -1,0 +1,14 @@
+{
+  "name": "selaksa",
+  "description": "workflow front end framework",
+  "version": "0.1.0",
+  "homepage": "http://kresnagaluh.com",
+  "author": "Kresna Galuh D. Herlangga",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-banner": "^0.4.0"
+  }
+}

@@ -18,9 +18,9 @@
 
 
 	<!-- JAVASCRIPT -->
-	<script src="assets/vendor/jquery/jquery-1.10.2.min.js"></script>
-	<script src="assets/vendor/jquery/jquery-migrate-1.2.1.min.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- END: JAVASCRIPT -->
 
 </body>
