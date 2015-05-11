@@ -1,2 +1,2 @@
 # Selaksa
-Web front end framework
+Web front end templating structure framework
