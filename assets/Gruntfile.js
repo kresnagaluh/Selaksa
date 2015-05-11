@@ -38,16 +38,9 @@ module.exports = function(grunt) {
         },
 
         watch: {
-            less: {
+            update: {
                   files: ['less/*.less'],
-                  tasks: ['less'],
-                  options: {
-                        spawn: false
-                  }
-            },
-            cssmin: {
-                  files: ['css/mainstyle.css'],
-                  tasks: ['cssmin'],
+                  tasks: ['less', 'cssmin', 'usebanner'],
                   options: {
                         spawn: false
                   }

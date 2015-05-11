@@ -31,7 +31,7 @@
 	<!-- STYLESHEET -->
 	<link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
-	<link href="assets/css/mainstyle.css" rel="stylesheet" />
+	<link href="assets/css/mainstyle.min.css" rel="stylesheet" />
 
 </head>
 <body>
