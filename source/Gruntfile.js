@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		mustache_html: {
-			templating: {
+			templating_html: {
 				options: {
 					src: 'template',
 					dist: '../dist',
@@ -16,21 +16,19 @@ module.exports = function(grunt) {
 		},
 
 		less: {
-			compileCore: {
+			compile_less: {
 				src: 'less/mainstyle.less',
 				dest: '../dist/assets/css/mainstyle.css'
 			}
 		},
 
 		cssmin: {
-			target: {
-				files: [{
-					expand: true,
-					cwd: '../dist/assets/css',
-					src: ['*.css', '!*.min.css'],
-					dest: '../dist/assets/css',
-					ext: '.min.css'
-				}]
+			minify_css: {
+				expand: true,
+				cwd: '../dist/assets/css',
+				src: ['*.css', '!*.min.css'],
+				dest: '../dist/assets/css',
+				ext: '.min.css'
 			}
 		},
 
@@ -43,13 +41,13 @@ module.exports = function(grunt) {
 					' */\n',
 				linebreak: true
 			},
-			files: {
+			create_banner: {
 				src: '../dist/assets/css/*.css'
 			}
 		},
 
 		watch: {
-			update: {
+			sync: {
 				files: ['**/*.mustache', '**/*.json', '**/*.less', '**/*.js'],
 				tasks: ['mustache_html', 'less', 'cssmin', 'usebanner'],
 				options: {
