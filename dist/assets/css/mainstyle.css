@@ -14,31 +14,25 @@
 /* -----------------------------------
 ** SELAKSA CSS
 ** ----------------------------------- */
-/* Font Weight */
-.font-normal {
-  font-weight: 400;
-}
-.font-light {
-  font-weight: 300;
-}
-.font-medium {
-  font-weight: 500;
-}
-.font-bold {
-  font-weight: 700;
-}
 /* Font Family */
 .font-primary {
   font-family: 'Open Sans', sans-serif;
 }
 .font-secondary {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
+}
+/* Font Weight */
+.font-thin {
+  font-weight: 100;
 }
 .font-light {
   font-weight: 300;
 }
 .font-normal {
   font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
 }
 .font-semi-bold {
   font-weight: 600;

@@ -5,10 +5,20 @@ module.exports = function(grunt) {
 
 		pkg: grunt.file.readJSON('package.json'),
 
+		mustache_html: {
+			templating: {
+				options: {
+					src: 'template',
+					dist: '../dist',
+					type: 'mustache'
+				}
+			}
+		},
+
 		less: {
 			compileCore: {
-				src: 'aasets/less/mainstyle.less',
-				dest: 'aasets/css/mainstyle.css'
+				src: 'less/mainstyle.less',
+				dest: '../dist/assets/css/mainstyle.css'
 			}
 		},
 
@@ -16,9 +26,9 @@ module.exports = function(grunt) {
 			target: {
 				files: [{
 					expand: true,
-					cwd: 'aasets/css',
+					cwd: '../dist/assets/css',
 					src: ['*.css', '!*.min.css'],
-					dest: 'aasets/css',
+					dest: '../dist/assets/css',
 					ext: '.min.css'
 				}]
 			}
@@ -34,14 +44,14 @@ module.exports = function(grunt) {
 				linebreak: true
 			},
 			files: {
-				src: 'aasets/css/*.css'
+				src: '../dist/assets/css/*.css'
 			}
 		},
 
 		watch: {
 			update: {
-				files: ['aasets/less/*.less'],
-				tasks: ['less', 'cssmin', 'usebanner'],
+				files: ['**/*.mustache', '**/*.json', '**/*.less', '**/*.js'],
+				tasks: ['mustache_html', 'less', 'cssmin', 'usebanner'],
 				options: {
 					spawn: false
 				}
@@ -52,13 +62,15 @@ module.exports = function(grunt) {
 
 
 	// Load the plugin.
+	grunt.loadNpmTasks('grunt-mustache-html');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-banner');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+
 
 
 	// Default task(s).
-	grunt.registerTask('default', ['less', 'cssmin', 'usebanner', 'watch']);
+	grunt.registerTask('default', ['mustache_html', 'less', 'cssmin', 'usebanner', 'watch']);
 
 };
